@@ -162,12 +162,12 @@ else:
     test_num = int(sys.argv[1])
 
 
-if test_num == 1:  # Computes probabilities of sampling paths in K_n; numerators form subsequence of A253950.
+if test_num == 1:  # Computes probabilities of sampling paths in K_n; numerators are OEIS sequence A374293.
     for i in range(2, 17):
         tree = nx.path_graph(i)
         p = internal(tree)
         print(f"\nn = {i}")
-        print(f"Probability of sampling a specific path form K_n:")
+        print(f"Probability of sampling a specific path from K_n:")
         print(p)
         print(f" = {float(p)}")
         print(f"Numerator (num orderings of edges leading to the path):")
@@ -197,105 +197,105 @@ elif test_num == 3:  # Shows no cycle-increasing bijection exists between either
 Output of test 1:
 
 n = 2
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 1
  = 1.0
 Numerator (num orderings of edges leading to the path):
 1
 
 n = 3
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 1/3
  = 0.3333333333333333
 Numerator (num orderings of edges leading to the path):
 2
 
 n = 4
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 11/180
  = 0.06111111111111111
 Numerator (num orderings of edges leading to the path):
 44
 
 n = 5
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 113/15120
  = 0.007473544973544973
 Numerator (num orderings of edges leading to the path):
 27120
 
 n = 6
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 21881/32432400
  = 0.000674664841331508
 Numerator (num orderings of edges leading to the path):
 882241920
 
 n = 7
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 46253/966984480
  = 4.7832205124946785e-05
 Numerator (num orderings of edges leading to the path):
 2443792425984000
 
 n = 8
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 131494614599/47359225289376000
  = 2.7765364360488794e-06
 Numerator (num orderings of edges leading to the path):
 846533597741050576896000
 
 n = 9
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 401720718947/2954952703422720000
  = 1.3594827371743958e-07
 Numerator (num orderings of edges leading to the path):
 50571850611494440562578575851520000
 
 n = 10
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 1958264695513589873/341074932465086139640320000
  = 5.7414500718666745e-09
 Numerator (num orderings of edges leading to the path):
 686805008584962439650318114385825747697664000000
 
 n = 11
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 3918430726447198567960531/18414082814237990859865088915712000
  = 2.1279532442514164e-10
 Numerator (num orderings of edges leading to the path):
 2701735270674169239689693528384644314472371275610193920000000000
 
 n = 12
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 1004211915275585293951070659343/143100424990201202655916245395129395200000
  = 7.017532724618733e-12
 Numerator (num orderings of edges leading to the path):
 3819958423456547324072333722421751679308286064300212197312630212725309440000000000
 
 n = 13
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 4412801128905638844377098968509009257/21190741193182066471630651785018406937726976000000
  = 2.082419434354386e-13
 Numerator (num orderings of edges leading to the path):
 2358190320559038013253038734002134501056785955033525100306183708271864557601556171595972608000000000000
 
 n = 14
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 34724813087641197329987933150401131669402059/6186975914245301867997740030004288258847465273436160000000
  = 5.612566392522799e-15
 Numerator (num orderings of edges leading to the path):
 758819833688728668682269168314076661888759143276671968466480158793861501876004861227804730198555357876721601740800000000000000
 
 n = 15
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 108183610375360277148317376866292834550831527746957417/781245180337980228317513278385849316415941866170148961941898240000000
  = 1.3847587556131633e-16
 Numerator (num orderings of edges leading to the path):
 149747362926493391018694406416033310179041677974350548939852245430365028195570327376952660380841611867271255283255613993669149247668224000000000000000000
 
 n = 16
-Probability of sampling a specific path form K_n:
+Probability of sampling a specific path from K_n:
 183128253489049988956227768685942522498182431613727572162524233806103/58162052290933150592235732138903087476380671551040597371493148484696625723801600000000
  = 3.148586514331059e-18
 Numerator (num orderings of edges leading to the path):
